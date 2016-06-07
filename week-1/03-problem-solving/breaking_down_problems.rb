@@ -1,3 +1,4 @@
+require 'pry'
 country = {}
 country[:flag_colors] = []
 colors = ['red', 'white', 'blue']
@@ -10,8 +11,28 @@ end
 instructors = {:avi=> {:age=>31, :fav_color=>"black", :places=>["long island"]},
 :steven=> {:age=>29, :fav_color=>"orange", :places=>["colorado", 'new jersey'], 
   :hobbies=>"baseball"}}
+instructors.each do |instructor, attributes|
+  # attributes = {:age=>31, :fav_color=>"black", :places=>["long island"]}
+  modified_places = attributes[:places].map do |place|
+    place.split.map do |word|
+      word.capitalize
+    end.join(" ")
+    # ["Colorado"]
+    # ["New", "Jersey"]
+    #  "New Jersey"
+  end
+  # modified_places => [Colorado, "New Jersey"]
+
+  # places = ["colorado", 'new jersey']
+  stringified_places = modified_places.join(", and ")
+  # "Colorado and New Jersey'
+  puts "#{instructor} is #{attributes[:age]} and he is from #{stringified_places}"
+end
+  # "Avi is 31 and he is from Long Island"
+  
 
 # 1. print out avi's age
+
 # 2. Print out each person's name
 # 3. Then print out each person's age and their favorite color
   # puts "Avi is 31 and his favorite color is black"
@@ -21,5 +42,8 @@ instructors = {:avi=> {:age=>31, :fav_color=>"black", :places=>["long island"]},
 # puts "Steven is 29 and he is from colorado and new jersey"
 
 # 5. Capitalize all of the places and print them out as well
+# for each instructor
+  # print out their attributes
+  # modify each of the locations to capitalize them 
  # puts "Avi is 31 and he is from Long Island"
 # puts "Steven is 29 and he is from Colorado and New Jersey"

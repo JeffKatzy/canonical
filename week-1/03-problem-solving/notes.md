@@ -18,7 +18,10 @@ A. What are problem solving techniques we know?
     - Translate this into code
 
 
-
 B. Instructors Problem
 C. RCAR
 D. Pigeon review
+E. Hashes
+  - keys, can be symbol, string, anything.
+  - use proper names for block arguments
+
