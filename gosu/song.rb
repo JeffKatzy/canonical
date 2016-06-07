@@ -10,7 +10,10 @@ load_all './lib'
 
 notes = [{pitch: 'lib/notes/D1.wav', rhythm: 1, decibals: 90}, {pitch: 'lib/notes/D1.wav', rhythm: 1, decibals: 90}]
 
-
+notes.each do |note|
+  # {pitch: chords[:g1], rhythm: 1, decibals: 90}
+  play(note[:pitch], note[:rhythm])
+end
  
 
  # 1. Play individual note
