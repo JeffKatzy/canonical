@@ -1,3 +1,21 @@
 Array Methods Quiz
 
 http://www.proprofs.com/quiz-school/story.php?title=mtuzmtgznglbyv
+
+
+
+flatten - remove nesting
+size - calculate the number of elements in an array
+
+Coercion
+  split - go from string to array
+  join - go from array to string 
+Answering a question
+  Size
+To remove values
+  - compact
+  - 
+
+Array 
+  - when x
+    - 
