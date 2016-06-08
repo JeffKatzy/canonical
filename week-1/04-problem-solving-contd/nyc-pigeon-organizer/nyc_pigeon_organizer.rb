@@ -1,3 +1,4 @@
+require 'pry'
       # pigeon_data = {
       #   :color => {
       #     :purple => ["Theo", "Peter Jr.", "Lucky"],
@@ -18,9 +19,31 @@
       # }
 
 def nyc_pigeon_organizer(data)
+      
   # new data structure to fill in
       # list of names
-      names = pigeon_data[:gender][:male] + pigeon_data[:gender][:female]
+      names = data[:gender][:male] + data[:gender][:female]
+
+      # ["theo", "peter"]
+      # TASK get to here...
+      # {"theo" => {}, "Peter Jr." => {}}
+      
+      initial_structure = names.each_with_object({}) do |name, initial_structure|
+            # construct for me another hash where the keys are the attributes
+            # and the values are an array
+            attributes = data.keys
+            attributes_hash = attributes.each_with_object({}) do |attribute, attributes_hash|
+                  attributes_hash[attribute] = []
+            end
+
+
+        initial_structure[name] = attributes_hash
+
+      end
+
+   # fill in the data structure
+   
+      
 end
 
 # steps
