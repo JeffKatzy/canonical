@@ -14,3 +14,12 @@ Try to remove the abstraction by making a concrete example
 
 
 
+Hashketball
+  - find the player with the biggest shoe size
+  - most rebounds with the player of the biggest shoe size
+
+  list -> array
+  You want a list of players
+  then you want that player's attributes
+  Then get the shoe size
+
