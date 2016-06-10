@@ -1,6 +1,8 @@
 class Song
   def artist
   end
+
+  
 end
 
 # 
@@ -9,4 +11,4 @@ rock = Song.new('im a rock')
 
 song.add_artist(paul)
 
-paul.song -> rock
+paul.songs -> rock
