@@ -3,17 +3,32 @@ class Car
 
   attr_accessor :name, :date_created
   @@count = 0
+  @@all = []
   # attr_reader :make
   # attr_writer :make
 
-  def Car.count
+  def self.count
     @@count
   end
-
-  def initialize(make, model) #hook, callback
+  
+  def self.all
+  
+    @@all 
+  end
+  # car_stuff = {make: 'ford', model: 'prius'}
+  # Car.new(car_stuff)
+  
+  def initialize(attributes_of_car) #hook, callback
+    
     @date_created = Time.now
-    @make = make
-    @model = model
+    @make = attributes_of_car[:make]
+    @model = attributes_of_car[:model]
+    @color = attributes_of_car[:color]
+    @@count += 1
+    @@all << self
+  end
+
+  def self.find_by_name(model)
     
   end
 
@@ -23,7 +38,13 @@ class Car
   #   @make
   # end
   def something_else
+    binding.pry
+    self.stuff
     puts 'hello'
+  end
+
+  def stuff
+    binding.pry
   end
 
   def make=(make)
