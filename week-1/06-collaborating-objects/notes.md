@@ -6,7 +6,11 @@
   - what do you have access to if you run ruby console.rb
 
 3. Note that we have an artist class and a song class.  Describe the relationship between artists and songs.
-
+  song belongs to an artist
+  artist has many songs
+  artist -> songs
+  artist.songs
+  song.artist
 4. Build out the following
   - Artist.all 
     -> should return all of the artists that have been initialized
