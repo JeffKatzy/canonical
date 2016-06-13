@@ -1,23 +1,23 @@
 class Artist
   attr_accessor :name
 
-  # def name
-    # @name
-  # end
-
-  # def name=(name)
-  #   @name = name
-  # end
-
   @@all = []
 
   def initialize(name)
     @name = name
     @@all << self
+    @songs = []
+  end
+
+  def songs
+    @songs
   end
 
   def add_song(song)
-    
+    binding.pry
+    song.artist=(self)
+    # <song @name ='rock' @artist=<artist>>
+    self.songs << song
   end
 
   def self.all
@@ -32,13 +32,22 @@ class Artist
       # [<artist @name = 'kanye'>, <artist @name = 'paul simon'>]
     # find the one whose name is kanye
     self.all.find do |artist|
-      binding.pry
       artist.name == name
-    end
-    binding.pry
+    end 
   end
-  
-
-
 end
+
+
+# artist = Artist.new('paul')
+# song = Song.new('rock')
+# artist.add_song(song)
+# def name
+    # @name
+# end
+
+# def name=(name)
+#   @name = name
+# end
+
+
 
