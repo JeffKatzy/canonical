@@ -1,0 +1,6 @@
+language: ruby
+rvm:
+  - 2.0
+  - 2.2
+  - jruby-19mode
+  - rbx-2
