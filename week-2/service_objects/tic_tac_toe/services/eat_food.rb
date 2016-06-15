@@ -1,0 +1,3 @@
+class EatFood
+  
+end
