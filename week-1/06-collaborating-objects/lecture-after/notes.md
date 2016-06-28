@@ -1,3 +1,4 @@
+I. Discussion Questions
 1. Describe what is happening in environment.
   what is each line doing?
   Why do we need to do this?

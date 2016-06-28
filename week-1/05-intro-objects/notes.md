@@ -6,7 +6,7 @@
   
 2. Why do we even need objects?
 # 1. Factory mechanism with objects
-# 2. Scope our methods
+# 2. Objects Scope our methods
 # Object definition: mechanism to encapsulate state and methods
   Modeled after cells
     - encapsulation
@@ -19,7 +19,9 @@
   - scope
   II. Class methods and class variables
     - why have them 
+      - want to ask the question of the factory
     - how they work
+       - self
     - scope
   III. self-referencing with objects
-    -
+    - SELF

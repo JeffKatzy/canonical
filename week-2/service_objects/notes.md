@@ -39,6 +39,8 @@ What does this mean for objects
   
   
 
+Models should not execute code that executes the state of the code.
+
 
 
 

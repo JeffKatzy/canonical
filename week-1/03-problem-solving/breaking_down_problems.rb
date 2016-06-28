@@ -1,36 +1,17 @@
 require 'pry'
-country = {}
-country[:flag_colors] = []
-colors = ['red', 'white', 'blue']
-colors.each do |color|
-          
-end
 # use iteration to add each element to the flag colors array
+  country = {}
+  country[:flag_colors] = []
+  colors = ['red', 'white', 'blue']
+  colors.each do |color|
+            
+  end
+
 
 
 instructors = {:avi=> {:age=>31, :fav_color=>"black", :places=>["long island"]},
 :steven=> {:age=>29, :fav_color=>"orange", :places=>["colorado", 'new jersey'], 
   :hobbies=>"baseball"}}
-instructors.each do |instructor, attributes|
-  # attributes = {:age=>31, :fav_color=>"black", :places=>["long island"]}
-  modified_places = attributes[:places].map do |place|
-    place.split.map do |word|
-      word.capitalize
-    end.join(" ")
-    # ["Colorado"]
-    # ["New", "Jersey"]
-    #  "New Jersey"
-  end
-  # modified_places => [Colorado, "New Jersey"]
-
-  # places = ["colorado", 'new jersey']
-  stringified_places = modified_places.join(", and ")
-  # "Colorado and New Jersey'
-  puts "#{instructor} is #{attributes[:age]} and he is from #{stringified_places}"
-end
-  # "Avi is 31 and he is from Long Island"
-  
-
 # 1. print out avi's age
 
 # 2. Print out each person's name

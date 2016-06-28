@@ -23,8 +23,9 @@ class Drink
   end
 
   def name
+    
     self
-    binding.pry
+    
   end
 
   def initialize(name, price, alcohol_content)
